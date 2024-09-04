@@ -11,6 +11,13 @@ def create_zip_file(zip_name, files):
                 print(f"File {file} does not exist.")
 
 # Example usage
-files_to_zip = ['test']  # Replace with your file names
-create_zip_file('my_files.zip', files_to_zip)
+files=[]
+getFiles=input("Enter the files: ")
+splitFiles=getFiles.split()
+for x in splitFiles:
+   files.append(x)
+files_to_zip = files  # Replace with your file names
+
+zipFileName = input("Enter the zip file name: ")
+create_zip_file(zipFileName+'.zip', files_to_zip)
 
