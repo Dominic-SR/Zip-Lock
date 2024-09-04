@@ -11,13 +11,21 @@ def create_zip_file(zip_name, files):
                 print(f"File {file} does not exist.")
 
 # Example usage
+print("""
+      
+__  /_ _|  _ \   |      _ \   ___| |  / ____|  _ \ 
+   /   |  |   |  |     |   | |     ' /  __|   |   |
+  /    |  ___/   |     |   | |     . \  |     __ < 
+____|___|_|     _____|\___/ \____|_|\_\_____|_| \_\
+      
+
+""")                
 files=[]
 getFiles=input("Enter the files: ")
 splitFiles=getFiles.split()
 for x in splitFiles:
    files.append(x)
 files_to_zip = files  # Replace with your file names
-
 zipFileName = input("Enter the zip file name: ")
 create_zip_file(zipFileName+'.zip', files_to_zip)
 
